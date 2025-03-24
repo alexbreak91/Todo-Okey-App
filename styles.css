@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-image: repeating-linear-gradient(to bottom, rgba(255, 165, 0, 0.3) 0px, rgba(255, 165, 0, 0.3) 1px, transparent 1px, transparent 30px);
+    background-size: 100% 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+.task-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.task-box {
+    width: 40%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.golden-bell {
+    color: gold;
+}
+
+.favorite-star {
+    color: gray;
+}
+
+.favorite-star.active {
+    color: gold;
+}

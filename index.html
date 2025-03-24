@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Okey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>
+        <span class="red">Todo</span> <span class="black">Okey</span>
+        <input type="file" id="bgUpload" accept="image/*" onchange="changeBackground(event)" title="Cambia Sfondo">
+    </h1>
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Aggiungi una nuova attività...">
+        <button onclick="addTask()">+</button>
+    </div>
+    <div class="task-container">
+        <div class="task-box" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Da Fare 📌</h2>
+            <ul id="todoList"></ul>
+        </div>
+        <div class="task-box" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Fatto ✅</h2>
+            <ul id="doneList"></ul>
+        </div>
+    </div>
+    <h2>⭐ Preferiti</h2>
+    <div class="task-box">
+        <ul id="favoritesList"></ul>
+    </div>
+    <input type="file" id="ringtoneUpload" accept="audio/*" onchange="setRingtone(event)" title="Seleziona Suoneria">
+    <script src="script.js"></script>
+</body>
+</html>
